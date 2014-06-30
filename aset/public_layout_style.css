@@ -1,0 +1,162 @@
+/**
+CSS layout dan style untuk buku tutorial ci
+by: Antonius Nugraha Widhi Pratama
+*/
+
+/**
+HTML STYLE
+*/
+BODY{
+    margin: 0;
+    padding: 0;
+    font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+    font-size: .80em;
+    color: #652D00;
+    background-color: #DFD0A7;
+}
+A, A:link, A:visited,A:hover, A:active{
+    outline: none; /*Firefox hack untuk menghilangkan outline link */
+}
+A, A:link, A:visited{
+    color:#800000;
+}
+A:hover, A:active{
+    color:#808000;
+}
+H2{
+    font-size:18px;
+}
+H3{
+    font-size:14px;
+}
+H2,H3{
+    background-color:transparent;
+    border-bottom:1px dashed #8B5A00;
+    font-weight:bold;
+    margin:5px 0 16px;
+    padding:5px 0 6px;
+    display:block;
+}
+TABLE{
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+TABLE TD,TABLE TH{
+    padding: 5px;
+}
+TABLE THEAD TH,TABLE TH{
+    background-color: #EEE8AA;
+    border-bottom: 2px solid #210000;
+}
+TABLE TBODY TD,TABLE TD{
+    border-bottom: 1px solid #EEE8AA;
+}
+
+label{
+	margin-top: 5px;
+}
+
+/**
+LAYOUT
+**/
+#wrapper{
+    margin: 0 auto;
+    width:80%;
+}
+#header{
+    height: 220px;
+    margin-top: -5px;
+    background: #512309 url(images/banner.png) no-repeat;
+}
+#main_page{
+    background-color: #FFFBEF;
+    padding-bottom:15px;
+    height: auto;
+}
+#main_page .content{
+    float: right;
+    width: 72%;
+    padding-right: 1em;
+}
+
+#main_page .module{
+    float: left;
+    width: 25%;
+    background: #bc9746;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 15px;
+}
+.content_left{
+    float: left;
+    width: 48%;
+}
+.content_right{
+    float: right;
+    width: 48%;
+}
+.module h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    background: #D5B96D no-repeat;
+    border-bottom: none;
+}
+.module ul{
+    -moz-padding-start: 10px; /*Firefox hack*/
+}
+.module ul li{
+    list-style: none;
+}
+.module ul li a{
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.module ul li a:hover,.module ul li a:active{
+    color: #F5F5DC;
+}
+.detail_box{
+    float:left;
+    width: auto;
+    font-size: .85em;
+    margin: 0 10px 10px 0;
+    padding: 1em;
+    color:#BDB76B;
+    background-color: #710000;
+}
+.detail_box table td{
+    border: none;
+}
+.detail_box_right{
+    float:right;
+    width: auto;
+    font-size: .85em;
+    margin: 0 10px 10px 0;
+    padding: 1em;
+    color:#BDB76B;
+    background-color: #710000;
+}
+.detail_box_right table td{
+    border: none;
+}
+.clear{
+    clear: both;
+}
+#footer{
+	background-color: #D5B96D;
+    font-size: .75em;
+    margin: 10px 0;
+	padding: 5px;
+}
+.center{
+    text-align: center;
+}
+
+.error{
+	border: solid;
+	color: red;
+	padding: 5px;
+}
